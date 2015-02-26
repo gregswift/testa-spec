@@ -1,7 +1,7 @@
 # sitelib for noarch packages, sitearch for others (remove the unneeded one)
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
 
-%global commit 29a9a98d05ef45898e1e7be6bc87277ba3fa6a69
+%global commit bb291f00619a63115fa649a71ea639499a9238de
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           testa
